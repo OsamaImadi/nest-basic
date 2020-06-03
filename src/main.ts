@@ -14,7 +14,7 @@ async function bootstrap() {
     app.enableCors({ origin: serverConfig.origin });
     logger.log(`Accepting requests from origin "${serverConfig.origin}"`);
   }
-
+//main
   const port = process.env.PORT || serverConfig.port;
   await app.listen(port);
   logger.log(`Application listening on port ${port}`);
